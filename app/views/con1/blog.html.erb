@@ -1,0 +1,23 @@
+<br>
+<br>
+<h1 class="text-center merch-heading"> Chech out the hottest topics in our blog!</h1>
+<br>
+<br>
+<%= image_tag "blogHeaderPicture1.jpg", alt: "some txt", height: "20%", width: "90%", :style=>"margin-left: 5%; margin-right: 5%" %>
+<br>
+<br>
+<% if @user1s %>
+  <% @user1s.each do |u|%>
+      <% if u.articles %>
+        <% u.articles.each do |a| %>
+            <div class="article">
+              <%= image_tag "profilePic.png", alt: "some txt", height: "15%", width: "15%" %>
+              <h2><%= a.title %></h2><h3>by <%= u.name %></h3><p><%= a.content %></p>
+
+              </div>
+              <br>
+       <% end %>
+      <% end %>
+ <% end %>
+<% end %>
+<br>

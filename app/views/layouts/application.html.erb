@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %></title>
+    <%= favicon_link_tag asset_path("logo.png"), :rel=> "icon", :type=> "image/png" %>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <%= render 'layouts/shim' %>
+
+  </head>
+
+  <body>
+
+    <div style="background-color: #66b3ff">
+    <%= image_tag "logo.png", alt: "some txt", height: "7.5%", width: "15%", :class => "center"%>
+    </div>
+    <div class="mynavbar">
+
+      <ul id="mynavbar">
+        <li><%= link_to "Home", controller: "con1", action: "home"%></li>
+        <li><%= link_to "Blog", controller: "con1", action: "blog"%></li>
+        <li><%= link_to "Merch", controller: "con1", action: "merch"%></li>
+        <li style="border-right: none"><%= link_to "About", controller: "con1", action: "about"%></li>
+      </ul>
+
+    </div>
+    <hr>
+
+    <%= yield %>
+    <% flash.each do |message_type, message| %>
+    <div class="alert alert-<%= message_type %>"><%= message %></div>
+    <% end %>
+
+
+    <hr style="margin-bottom: 0%;">
+    <footer style="background-color: #0059b3; margin-top: 0%; position: relative; padding-top: 2%; border-top: solid black 1px">
+
+      <form>
+        <div class="form-group" style="text-align: center; font-size: 80%" >
+
+          <label for="exampleInputEmail1">Sign up <a href="\signup">here</a> and Subscribe to our weekly newsletter!</label>
+          <input style="width: 50%; margin: auto" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <button style="margin-left:auto; margin-right:auto; margin-top: 1%" type="submit" class="btn btn-success">Submit</button>
+        </div>
+
+
+      </form>
+      <div class="social-media-logos">
+      <%= link_to(image_tag("facebooklogo.png", height: "100%", width: "25%", style: "margin: 0% 0% 0% 0%"), "https://www.facebook.com") %>
+      <%= link_to(image_tag("twitterlogo.png", height: "100%", width: "25%", style: "margin: 0% 0% 0% 0%"), "https://www.twitter.com") %>
+      <%= link_to(image_tag("instagramlogo.png", height: "100%", width: "25%", style: "margin: 0% 0% 0% 0%"), "https://www.instagram.com") %>
+      </div>
+      </footer>
+
+
+
+
+
+
+  </body>
+</html>

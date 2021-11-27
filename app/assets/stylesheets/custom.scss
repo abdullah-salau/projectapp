@@ -1,0 +1,160 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+div.navbar{
+  width: 100%;
+  height: 15%;
+  background-color: #1a8cff;
+  /**float: right;**/
+  padding-top: 1.48%;
+  padding-bottom: 1.4%;
+  border-top: 0;
+  /**margin: -0.5% 0 30px 0;**/
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0%;
+  padding-left: 0%;
+  padding-right: 0%;
+  float:none;
+}
+
+
+ul#navbar {
+    display: inline;
+    background-color: #1a8cff;
+    /**float: right;
+    margin-top: 45px;
+    margin-right: 67px;**/
+    margin-left: 30%;
+    margin-right: 30%;
+    float: none;
+    text-align: center;
+}
+
+ul#navbar li {
+    display:inline;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    border-right: solid;
+    border-width: thin;
+    font-size: 180%;
+    float:none;
+
+}
+a {
+  padding: 1.5%;
+  /**color: white;**/
+  text-decoration: none;
+  font-size: 100%;
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+  color: #1e7b1e;
+ }
+
+a:visited{
+  text-decoration: none;
+  color: #1e7b1e;
+
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff980;
+  background-color: #1e7b1e
+ }
+
+a:active {
+  text-decoration: none;
+  color: #1e7b1e;
+}
+
+table, th, td {
+ border: 10% solid black;
+}
+
+body{
+  background-color: #fff980;
+  padding-top: 0;
+  margin-top: 0;
+  padding-left: 0%;
+  margin-left: 0%;
+  padding-right: 0%;
+  margin-right: 0%;
+
+}
+
+.div-0{
+  background-color: #fff980;
+  height: 500px;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 0%;
+}
+
+.div-1{
+  float: left;
+  margin-top: 30px;
+
+}
+
+.div-2{
+  clear: left;
+}
+
+.page-heading{
+  font-size: 300%;
+
+}
+
+h1{
+  text-align: center;
+}
+
+.wrap{
+  padding: 0px 100px 0px 60px;
+  margin: 0px 40px 0px 40px;
+  border-left: 600px solid #fff980;
+}
+
+h2{
+  color: #2eb82e;
+}
+hr{
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  height: 3px;
+  background-color: black;
+  border: none;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /**width: 20%;
+  height: 10%;**/
+  margin-top: -80px;
+}
+
+.navcenter{
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  /**width: 20%;
+  height: 10%;**/
+}
+
+.footer {
+  position: relative;
+  left: 0 ;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
